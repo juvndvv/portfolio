@@ -1,0 +1,43 @@
+:root {
+  /* Small 576px */
+  --font-size-sm: 16px;
+  --padding-container-sm: 8px 16px;
+
+  /* Medium 768px */
+  --font-size-md: 18px;
+  --padding-container-md: 12px 24px;
+
+  /* Large 992px */
+  --font-size-lg: 20px;
+  --padding-container-lg: 16px 32px;
+
+  /* Extra Large 1200px */
+  --font-size-xl: 20px;
+  --padding-container-xl: 24px 48px;
+}
+
+:root {
+  --font-size: var(--font-size-sm);
+  --padding-container: var(--padding-container-sm);
+}
+
+@media (width > 768px) {
+  :root {
+    --font-size: var(--font-size-md);
+    --padding-container: var(--padding-container-md);
+  }
+}
+
+@media (width > 1000px) {
+  :root {
+    --font-size: var(--font-size-lg);
+    --padding-container: var(--padding-container-lg);
+  }
+}
+
+@media (width > 1200) {
+  :root {
+    --font-size: var(--font-size-xl);
+    --padding-container: var(--padding-container-xl);
+  }
+}

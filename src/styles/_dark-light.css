@@ -1,31 +1,64 @@
 :root {
-  --background-color-light: #fff;
+  /* Background */
+  --background-color-light: #f1f1f1;
   --background-color-dark: #1f1f1f;
+
+  /* Surfaces */
+  --surface-light: #fff;
+  --surface-dark: #2f2f2f;
+
+  /* Shadows */
+  --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --inner-shadow-light: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  --inner-shadow-dark: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+
+  /* Text */
   --text-primary-light: #1f1f1f;
   --text-primary-dark: #fff;
   --text-secondary: #6b6b6b;
+
+  /* Borders */
+  --border-color-light: #e0e0e0;
+  --border-color-dark: #3f3f3f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--background-color-dark);
+    --surface: var(--surface-dark);
+    --shadow: var(--shadow-dark);
+    --inner-shadow: var(--inner-shadow-dark);
     --text-primary: var(--text-primary-dark);
+    --border-color: var(--border-color-dark);
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: var(--background-color-light);
+    --surface: var(--surface-light);
+    --shadow: var(--shadow-light);
+    --inner-shadow: var(--inner-shadow-light);
     --text-primary: var(--text-primary-light);
+    --border-color: var(--border-color-light);
   }
 }
 
-body[theme="dark"] {
+body[data-theme="dark"] {
   --background-color: var(--background-color-dark);
+  --surface: var(--surface-dark);
+  --shadow: var(--shadow-dark);
+  --inner-shadow: var(--inner-shadow-dark);
   --text-primary: var(--text-primary-dark);
+  --border-color: var(--border-color-dark);
 }
 
-body[theme="light"] {
+body[data-theme="light"] {
   --background-color: var(--background-color-light);
+  --surface: var(--surface-light);
+  --shadow: var(--shadow-light);
+  --inner-shadow: var(--inner-shadow-light);
   --text-primary: var(--text-primary-light);
+  --border-color: var(--border-color-light);
 }
