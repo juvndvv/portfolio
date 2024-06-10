@@ -1,0 +1,31 @@
+:root {
+  --background-color-light: #fff;
+  --background-color-dark: #1f1f1f;
+  --text-primary-light: #1f1f1f;
+  --text-primary-dark: #fff;
+  --text-secondary: #6b6b6b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--background-color-dark);
+    --text-primary: var(--text-primary-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: var(--background-color-light);
+    --text-primary: var(--text-primary-light);
+  }
+}
+
+body[theme="dark"] {
+  --background-color: var(--background-color-dark);
+  --text-primary: var(--text-primary-dark);
+}
+
+body[theme="light"] {
+  --background-color: var(--background-color-light);
+  --text-primary: var(--text-primary-light);
+}
