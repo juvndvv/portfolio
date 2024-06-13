@@ -1,8 +1,8 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { InitializeService } from './core/services/initialize.service';
-import { ThemeTogglerComponent } from './core/components/theme-toggler/theme-toggler.component';
-import { HeroSectionComponent } from './features/hero-section/hero-section.component';
+import { HeroSectionComponent } from './shared/components/hero-section/hero-section.component';
+import { ThemeTogglerComponent } from './shared/components/theme-toggler/theme-toggler.component';
 
 @Component({
   selector: 'app-root',

@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { DarkLightService } from '../../services/dark-light.service';
+import { DarkLightService } from '../../../core/services/dark-light.service';
 
 @Component({
   selector: 'app-theme-toggler',
